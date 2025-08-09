@@ -1,14 +1,14 @@
-# 📊 Project: Sales Data Cleaning and Standardization
+# 📊 Project: Sales Data Cleaning and Standardization Using SQL
 
 ## 🔍 Overview  
-This project focuses on cleaning and standardizing a messy raw sales dataset to enable accurate and consistent analysis. The raw data contained inconsistent city names, item descriptions, payment methods, customer feedback, and quantity values, along with duplicates and formatting issues.
+This project leverages SQL to clean and standardize a messy raw sales dataset, enabling accurate and consistent data analysis. The dataset contained inconsistent city names, item descriptions, payment methods, customer feedback, and quantity values, along with duplicates and formatting irregularities.
 
-## 🛠️ Key Tasks Performed  
-- **Standardized Text Fields:** Cleaned variations in city names, item categories, payment methods, and customer feedback using conditional logic and string manipulation for consistency.  
-- **Formatted Quantitative Data:** Converted text-based quantity values to numeric format for reliable aggregation.  
-- **Normalized Customer Names:** Applied uniform capitalization to customer names for consistency across records.  
-- **Removed Duplicates:** Identified and filtered out duplicate transactions using ROW_NUMBER() window function based on customer ID, name, purchase date, and item.  
-- **Consolidated Clean Data:** Created a final, deduplicated table with all standardized fields for easy consumption by downstream analytics and reporting.
+## 🛠️ Key SQL Techniques and Functions Used  
+- **CASE Statements:** Applied conditional logic to standardize text fields such as city names, item categories, payment methods, and customer feedback.  
+- **String Functions:** Used functions like `LOWER()`, `UPPER()`, `TRIM()`, `LEFT()`, and `SUBSTRING()` to normalize text formatting, including customer names and categorical fields.  
+- **Window Functions:** Utilized `ROW_NUMBER()` with `PARTITION BY` to identify and remove duplicate records effectively based on customer ID, name, purchase date, and item.  
+- **Date Functions:** Converted string dates to proper date formats using `STR_TO_DATE()` for consistent date handling.  
+- **Null Handling:** Managed missing or empty values in payment methods and other fields by applying `CASE` logic for accurate categorization.
 
 ## 🚀 Impact  
-This standardized and clean dataset ensures data integrity, reduces errors in analysis, and facilitates meaningful business insights on sales trends, customer behavior, and payment preferences. It lays a strong foundation for advanced analytics, forecasting, and strategic decision-making.
+By using SQL for comprehensive data cleaning and transformation, the resulting standardized dataset ensures data integrity and minimizes errors in downstream analysis. This enables reliable insights into sales trends, customer behavior, and payment preferences, forming a robust foundation for advanced analytics and strategic decision-making.
