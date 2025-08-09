@@ -13,4 +13,4 @@ This project leverages SQL to clean and standardize a messy raw sales dataset, e
 ## 🚀 Impact  
 By using SQL for comprehensive data cleaning and transformation, the resulting standardized dataset ensures data integrity and minimizes errors in downstream analysis. This enables reliable insights into sales trends, customer behavior, and payment preferences, forming a robust foundation for advanced analytics and strategic decision-making.
 
-## [Check sql queries](https://github.com/Pranshul-cloud/data_cleaning.sql/blob/main/sales_data_cleaning.sql)
+## You can find all SQL queries related to this project in the [sql_queries](URL-or-relative-path) folder.
